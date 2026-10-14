@@ -1,0 +1,6 @@
+# Yerel geliştirme ayarları (sitede gerekmez)
+.claude/
+
+# Windows / OneDrive
+Thumbs.db
+desktop.ini
