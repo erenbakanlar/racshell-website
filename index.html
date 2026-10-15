@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="css/style.css?v=12">
 
   <script type="application/ld+json">
   {
@@ -99,9 +99,6 @@
     <symbol id="i-eye" viewBox="0 0 24 24">
       <g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></g>
     </symbol>
-    <symbol id="i-spark" viewBox="0 0 24 24">
-      <path d="M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-12-12C6.2 11.4 11.4 6.2 12 0Z" fill="currentColor"/>
-    </symbol>
     <symbol id="i-hanger" viewBox="0 0 24 24">
       <path d="M10 6.5a2 2 0 1 1 2.8 1.8c-.5.3-.8.7-.8 1.3v.6l8.6 5.4c.9.6.5 2-.6 2H4c-1.1 0-1.5-1.4-.6-2L12 10.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
@@ -149,10 +146,10 @@
             <svg class="brand-shell" aria-hidden="true"><use href="#shell"/></svg>
             <span class="hero-brand-name">RACSHELL</span>
           </div>
+          <span class="hero-eyebrow intro d1">Kadın Giyim · Çanta · Takı</span>
 
           <h1>
-            <span class="line"><span>Antalya'da</span></span>
-            <span class="line"><span><em>Şıklığın</em></span></span>
+            <span class="line"><span>Antalya'da <em>Şıklığın</em></span></span>
             <span class="line"><span>Yeni Adresi</span></span>
           </h1>
 
@@ -173,110 +170,6 @@
           </div>
         </div>
 
-        <!-- Kırmızı elbiseli kadın — elbise açılışta dalgalanır, sonra durur (js/main.js) -->
-        <div class="hero-visual intro d2" aria-hidden="true">
-          <span class="sparkle s1"><svg><use href="#i-spark"/></svg></span>
-          <span class="sparkle s2"><svg><use href="#i-spark"/></svg></span>
-          <span class="sparkle s3"><svg><use href="#i-spark"/></svg></span>
-          <span class="sparkle s4"><svg><use href="#i-spark"/></svg></span>
-          <span class="sparkle s5"><svg><use href="#i-spark"/></svg></span>
-
-          <svg viewBox="0 0 600 900" id="heroFigure">
-            <defs>
-              <linearGradient id="archFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#fffaf3"/>
-                <stop offset="1" stop-color="#ecdac6"/>
-              </linearGradient>
-              <linearGradient id="archStroke" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#e3c898"/>
-                <stop offset=".5" stop-color="#b08a52"/>
-                <stop offset="1" stop-color="#dcc195"/>
-              </linearGradient>
-              <linearGradient id="skirtFill" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#6e0912"/>
-                <stop offset=".3" stop-color="#b8141f"/>
-                <stop offset=".46" stop-color="#d9303b"/>
-                <stop offset=".62" stop-color="#b3121f"/>
-                <stop offset="1" stop-color="#5f0710"/>
-              </linearGradient>
-              <linearGradient id="trainFill" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#9c0f1a"/>
-                <stop offset="1" stop-color="#d0293a"/>
-              </linearGradient>
-              <linearGradient id="bodiceFill" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#d42c38"/>
-                <stop offset=".55" stop-color="#b3121f"/>
-                <stop offset="1" stop-color="#7d0b15"/>
-              </linearGradient>
-              <linearGradient id="skin" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#d9a985"/>
-                <stop offset=".4" stop-color="#efcbad"/>
-                <stop offset="1" stop-color="#d8a784"/>
-              </linearGradient>
-              <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#4a2f22"/>
-                <stop offset="1" stop-color="#1e130e"/>
-              </linearGradient>
-              <radialGradient id="floorShadow">
-                <stop offset="0" stop-color="#6b4a2a" stop-opacity=".35"/>
-                <stop offset="1" stop-color="#6b4a2a" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-
-            <!-- kemer / vitrin -->
-            <path d="M100 880V340a200 200 0 0 1 400 0v540Z" fill="url(#archFill)"/>
-            <path d="M100 880V340a200 200 0 0 1 400 0v540" fill="none" stroke="url(#archStroke)" stroke-width="2"/>
-            <path d="M118 880V344a182 182 0 0 1 364 0v536" fill="none" stroke="#dcc195" stroke-width="1" opacity=".7"/>
-            <line x1="40" y1="880" x2="560" y2="880" stroke="#c9ab7a" stroke-width="1" opacity=".6"/>
-            <ellipse cx="310" cy="866" rx="230" ry="20" fill="url(#floorShadow)"/>
-
-            <g id="woman">
-              <!-- etek kuyruğu (arkada) -->
-              <path id="train" fill="url(#trainFill)" opacity=".92"/>
-
-              <!-- etek -->
-              <path id="skirt" fill="url(#skirtFill)"/>
-              <g id="folds" fill="none" stroke-linecap="round"></g>
-
-              <!-- sol kol (sarkan) -->
-              <path fill="url(#skin)" d="M240 200C232 230 228 270 229 305C230 345 232 385 236 430C237 445 238 455 240 466C241 480 246 492 252 490C257 488 256 476 254 466C251 430 250 390 250 350C250 310 252 270 256 236Z"/>
-
-              <!-- boyun & omuz -->
-              <path fill="url(#skin)" d="M291 142C292 156 291 166 288 176L312 176C309 166 308 156 309 142Z"/>
-              <path fill="#cf9f7c" opacity=".5" d="M291 146C296 152 304 152 309 146L309 156C304 160 296 160 291 156Z"/>
-              <path fill="url(#skin)" d="M288 172C276 178 258 180 248 186C240 191 237 200 238 212L362 212C363 200 360 191 352 186C342 180 324 178 312 172Z"/>
-              <path d="M282 188Q300 195 318 188" fill="none" stroke="#c99470" stroke-width="1.2" opacity=".55"/>
-
-              <!-- korsaj (tek omuz) -->
-              <path fill="url(#bodiceFill)" d="M246 194C254 184 268 182 278 192C298 206 324 214 355 221C354 250 345 280 331 302L270 302C259 282 253 256 250 228C248 214 245 202 246 194Z"/>
-              <path d="M262 200C282 226 300 252 318 298M258 222C274 248 288 272 300 298M300 214C312 236 324 262 330 290" fill="none" stroke="#6e0912" stroke-width="1.6" opacity=".35" stroke-linecap="round"/>
-              <path d="M266 196C286 212 312 220 350 226" fill="none" stroke="#f0606b" stroke-width="1.4" opacity=".5" stroke-linecap="round"/>
-
-              <!-- altın kemer -->
-              <path fill="url(#archStroke)" d="M269 298Q300 305 332 298L333 307Q300 314 268 307Z"/>
-              <circle cx="300" cy="306" r="6" fill="#f1deb4" stroke="#8a6835" stroke-width="1.2"/>
-
-              <!-- sağ kol (bel üzerinde) -->
-              <path fill="url(#skin)" d="M350 192C366 200 378 226 386 256C392 276 398 292 392 304C380 312 356 318 338 320C330 321 322 318 320 312C322 306 330 304 338 304C356 302 370 298 374 292C370 270 362 246 352 226Z"/>
-              <path d="M386 296Q380 300 374 292" fill="none" stroke="#c99470" stroke-width="1.2" opacity=".6"/>
-
-              <!-- baş -->
-              <circle cx="318" cy="84" r="17" fill="url(#hair)"/>
-              <path fill="url(#hair)" d="M272 128C266 94 284 80 302 81C324 82 334 100 328 130C326 140 320 146 314 150L286 150C279 145 274 138 272 128Z"/>
-              <ellipse cx="300" cy="120" rx="25" ry="32" fill="url(#skin)" transform="rotate(-6 300 120)"/>
-              <path fill="url(#hair)" d="M275 116C278 94 296 84 313 88C324 92 330 104 327 120C320 104 303 96 287 104C281 107 277 111 275 116Z"/>
-              <path d="M293 137Q300 142 307 136Q300 133 293 137Z" fill="#b3121f"/>
-              <path d="M286 117Q291 119 296 117M305 116Q310 118 315 115" fill="none" stroke="#3b2418" stroke-width="1.3" stroke-linecap="round" opacity=".7"/>
-              <line x1="276" y1="128" x2="276" y2="140" stroke="#c9a468" stroke-width="1.2"/>
-              <circle cx="276" cy="143" r="3.6" fill="#f1deb4" stroke="#8a6835" stroke-width="1"/>
-            </g>
-          </svg>
-
-          <div class="hero-badge">
-            <span class="dot"></span>
-            <div><small>Yeni Sezon</small><strong>Zarafet Kırmızıda</strong></div>
-          </div>
-        </div>
       </div>
 
       <a href="#kategoriler" class="scroll-hint" aria-label="Aşağı kaydır">Keşfet<i></i></a>
@@ -528,7 +421,7 @@
     </div>
   </div>
 
-  <script src="js/products.js?v=10"></script>
-  <script src="js/main.js?v=10"></script>
+  <script src="js/products.js?v=12"></script>
+  <script src="js/main.js?v=12"></script>
 </body>
 </html>
